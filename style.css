@@ -21,7 +21,7 @@ nav{
     width: 160px;
     margin-right: 500px;
 }
-.nav-left.nav-right{
+.nav-left, .nav-right{
     display: flex;
     align-items: center;
 }
@@ -36,7 +36,7 @@ nav{
 .nav-user-icon img{
     width: 100px;
     height: 100px;
-    border-radius: 80%;
+    border-radius: 50%;
     cursor: pointer;
 }
 .nav-user-icon{
@@ -66,14 +66,14 @@ nav{
 }
 .online::after{
     content: '';
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     border: 2px solid #fff;
     border-radius: 50%;
     background: #41db51;
     position: absolute;
     top: 5px;
-    right: 20px;
+    right: 10px;
 }
 
 .container{
@@ -196,7 +196,7 @@ nav{
     border-radius: 50%;
 }
 .online-list .online{
-    width: 90px;
+    width: 60px;
     border-radius: 50%;
     margin-right: 15px;
     }
@@ -257,4 +257,43 @@ nav{
     transform: translateX(-50%);
     border: 0;
     width: 35px;
+}
+
+.write-post-container{
+    width: 100%;
+    background: #fff;
+    border-radius: 6px;
+    padding:  20px;
+    columns: #626262;
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+}
+.user-profile img{
+    width: 45px;
+    border-radius: 50%;
+    margin-right:  10px;
+}
+.user-profile p{
+    margin-bottom: -5px;
+    font-weight: 500;
+    color: #626262;
+
+}
+.user-profile small{
+    font-size: 12px;
+}
+
+.post-input-container{
+    padding-left: 55px;
+    padding-top: 20px;
+}
+.post-input-container textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    resize: none;
 }
